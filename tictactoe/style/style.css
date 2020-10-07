@@ -1,0 +1,161 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  font-family: sans-serif;
+}
+
+header {
+  display: table-row;
+  height: 100px;
+  font-size: 8rem;
+  height: 10rem;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-style: italic;
+  background-color: lightgreen;
+}
+
+.main {
+  /* display: table-row; */
+  padding-top: 20px;
+  padding-bottom: 50px;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  -webkit-columns: 300px;
+  -moz-columns: 300px;
+  columns: 300px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.Square {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 50px;
+  border-top: 2px solid grey;
+}
+
+#square1, #square2, #square4, #square5 {
+  border: none;
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+
+#square3, #square6 {
+  border: none;
+  /* border-right: 2px solid grey; */
+  border-bottom: 2px solid grey;
+}
+
+#square7, #square8 {
+  border: none;
+  border-right: 2px solid grey;
+  /* border-bottom: 2px solid grey; */
+}
+
+#square9 {
+  border: none;
+}
+
+.gameArea {
+  width: 300px;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  /* padding-top: 3rem; */
+}
+
+.infoArea {
+  width: 300px;
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+#scores {
+  display: contents;
+}
+
+table {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  font-size: 2rem;
+  padding-top: 2.2rem;
+}
+
+#msg {
+  display: inline-block;
+  height: 80px;
+  margin-top: 25px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#names {
+  display: none;
+}
+
+button {
+  text-align: center;
+  margin: 0.5rem;
+  background-color: lightgreen;
+  border-color: lightgreen;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  border-style: solid;
+  outline: none;
+}
+
+button:hover {
+  background-color: inherit;
+}
+
+.cancel {
+  background-color: tomato;
+  border-color: tomato;
+}
+
+.score {
+  width: 80px;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.scoreLight {
+  font-size: 2rem;
+  text-align: center;
+}
+
+footer {
+  display: table-row;
+  height: 100px;
+  background-color: lightgreen;
+  text-align: center;
+}
+
+footer>p {
+  display: table-cell;
+  height: 50px;
+  vertical-align: middle;
+}

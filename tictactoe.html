@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="tictactoe/style/style.css" />
+  </head>
+  <div class="wrapper">
+  <header>
+    TicTacToe
+  </header>
+  <body onload="startGame();">
+
+      <div class="main">
+        <div class="infoArea">
+        <button onclick="javascript:startGame();">Start over</button><br />
+        <button onclick="javascript:resetBoard();">Clear board</button><br />
+          <button onclick="showNameBoxes();" >Set player names</button>
+          <div id="names">
+            <div style="margin-left:1rem;">Who wants to play with X: <input id="playerX"></div>
+            <div style="margin-left:1rem;">Who wants to play with O: <input id="playerO"></div>
+            <button onclick="setName();" style="margin-left:2rem;">Begin</button>
+            <button class="cancel" onclick="startGame();">Cancel</button>
+          </div>
+          <div id="scores">
+            <table >
+              <th>
+                Scores
+              </th>
+              <tr>
+                <td class="score">X</td>
+                <td class="score">Ties</td>
+                <td class="score">O</td>
+              </tr>
+              <tr>
+                <td id="X" class="scoreLight"></td>
+                <td id="T" class="scoreLight"></td>
+                <td id="O" class="scoreLight"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      <div class="gameArea">
+        <div id="msg">
+        </div>
+        <table>
+          <tr>
+            <td id="square1" class="Square" onclick="nextMove(this)"></td>
+            <td id="square2" class="Square" onclick="nextMove(this)"></td>
+            <td id="square3" class="Square" onclick="nextMove(this)"></td>
+          </tr>
+          <tr>
+            <td id="square4" class="Square" onclick="nextMove(this)"></td>
+            <td id="square5" class="Square" onclick="nextMove(this)"></td>
+            <td id="square6" class="Square" onclick="nextMove(this)"></td>
+          </tr>
+          <tr>
+            <td id="square7" class="Square" onclick="nextMove(this)"></td>
+            <td id="square8" class="Square" onclick="nextMove(this)"></td>
+            <td id="square9" class="Square" onclick="nextMove(this)"></td>
+          </tr>
+        </table>
+        </div>
+      </div>
+
+    <footer>
+      <p>Copyright © 2020 lohtander.se</p>
+    </footer>
+</div>
+    <script src="tictactoe/script/script.js"></script>
+  </body>
+</html>
